@@ -1,0 +1,266 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lui lui lui - Accueil</title>
+    <!-- CSS only -->
+   <link rel="stylesheet" href="main.css">
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</head>
+
+<body>
+
+        
+    <div id='app'>
+        <main class="main">
+        <div class="scene1" v-if='scene11'>
+            <img src="public/img/image11.jpg" alt="photo de cadavre" @click='displayScene12()'>
+        </div>
+        
+        <div class="scene1" v-if='scene12'>
+            <img src="public/img/image12.jpg" alt="photo de cadavre" @click='displayScene13()'>
+        </div>
+        
+        <div class="scene1" v-if='scene13'>
+            <img src="public/img/image13.jpg" alt="photo de cadavre" @click='displayScene14()'>
+        </div>
+        
+        <div class="scene1" v-if='scene14'>
+            <img src="public/img/image14.jpg" alt="photo de cadavre" @click='displayScene15()'>
+        </div>
+        
+        <div class="scene1" v-if='scene15'>
+            <img src="public/img/image15.jpg" alt="photo de cadavre" @click='displayScene16()'>
+        </div>
+        
+        <div class="scene1" v-if='scene16'> <br><br>
+            <div class="message" onclick="redirect()">
+                <p>
+                    {{ message }}
+                </p>
+            </div>
+
+        </div>
+         
+        </main>
+    </div>
+       
+    <script>
+        var son1 = new Audio('public/audio/son1.mp3');
+        var son12 = new Audio('public/audio/son12.mp3');
+        var son13 = new Audio('public/audio/son13.mp3');
+        var son14 = new Audio('public/audio/son14.mp3');
+        var son15 = new Audio('public/audio/son15.mp3');
+        var son21 = new Audio('public/audio/son21.mp3');
+        var son22 = new Audio('public/audio/son22.mp3');
+        var son23 = new Audio('public/audio/son23.mp3');
+        var son24 = new Audio('public/audio/son24.mp3');
+        const { createApp } = Vue
+             createApp({
+                data() {
+                    return {
+                    scene1: false,
+                    scene11: true,
+                    scene12: false,
+                    scene13:false,
+                    scene14: false,
+                    scene15:false,
+                    scene16: false,
+                    scene21: false,
+                    scene22: false,
+                    scene23: false,
+                    scene24: false,
+                    scene25: false,
+                    scene26: false,
+                    scene27: false,
+                    scene28: false,
+                    scene29: false,
+                    scene291: false,
+                    scene292: false,
+                    scene293: false,
+                    scene294: false,
+                    scene295: false,
+                    scene296: false,
+                    scene297: false,
+                    scene298: false,
+                    scene299: false,
+                    message: '404 error page not found',
+                    scene2991: false,
+                    scene2992: false,
+                    scene2993: false,
+                    scene2994: false,
+                    scene2995: false,
+                    scene2996: false,
+                    scene2997: false,
+                    showMessage: true,
+                   
+                    }
+                    },
+                    mounted: function(){
+                       this.displayScene11();
+                      // this.setShow();
+                      //this.addToBasket();
+                     
+                      
+                    },
+                    methods: {
+                     displayScene1(){
+                        this.scene1 = true;
+                      //  son1.play();
+                     // setTimeout(() => (this.son1.play()), 14000);
+                    },
+                    addToBasket() {
+                   // const item = this.photo;
+                    setTimeout(() => (this.message = 'ok'), 2000);
+                    },
+                   
+                 
+                    displayScene11(){
+                        this.scene1 = false;
+                        this.scene11 = true;
+                    },
+                    displayScene12(){
+                        this.scene11 = false;
+                        this.scene12 = true;
+                      //  son12.stop();
+                      son12.play();
+                       
+                    },
+                    displayScene13(){
+                        this.scene12 = false;
+                        this.scene13 = true;
+                      //  son13.stop();
+                      son13.play();
+                       
+                    },
+                    displayScene14(){
+                        this.scene13 = false;
+                        this.scene14 = true;
+                        //this.son14.stop();
+                        son14.play();
+                       
+                    },
+                    displayScene15(){
+                         son14.pause();
+                        this.scene14 = false;
+                        this.scene15 = true;
+                         setTimeout(() => (this.scene15 = false), 1000);
+                           setTimeout(() => (this.scene16 = true), 1500);
+                        setTimeout(() => son15.play(), 1300);
+                       
+                    },
+                    displayScene21(){
+                        this.scene1 = false;
+                        this.scene21 = true;
+                    },
+                    displayScene22(){
+                        this.scene21 = false;
+                        this.scene22 = true;
+                        son21.play();
+                    },
+                    displayScene23(){
+                        this.scene22 = false;
+                        this.scene23 = true;
+                    },
+                    displayScene24(){
+                        this.scene23 = false;
+                        this.scene24 = true;
+                        son22.play();
+                    },
+                    displayScene25(){
+                        this.scene24 = false;
+                        this.scene25 = true;
+                        son22.play();
+                        },
+                    displayScene26(){
+                        this.scene25 = false;
+                        this.scene26 = true;
+                        son22.pause();
+                        son23.play();
+                        },
+                    displayScene27(){
+                        this.scene26 = false;
+                        this.scene27 = true;
+                        },
+                    displayScene28(){
+                        this.scene27 = false;
+                        this.scene28 = true;
+                        },
+                    displayScene29(){
+                        this.scene28 = false;
+                        this.scene29 = true;
+                        },
+                    displayScene291(){
+                        this.scene29 = false;
+                        this.scene291 = true;
+                        },
+                    displayScene292(){
+                        this.scene291 = false;
+                        this.scene292 = true;
+                        },
+                    displayScene293(){
+                        this.scene292 = false;
+                        this.scene293 = true;
+                        son23.pause();
+                        son24.play();
+                        },
+                        displayScene294(){
+                            son24.pause();
+                        this.scene293 = false;
+                        this.scene294 = true;
+                        },
+                        displayScene295(){
+                        this.scene294 = false;
+                        this.scene295 = true;
+                        },
+                        displayScene296(){
+                        this.scene295 = false;
+                        this.scene296 = true;
+                        },
+                        displayScene297(){
+                        this.scene296 = false;
+                        this.scene297 = true;
+                        },
+                        displayScene298(){
+                        this.scene297 = false;
+                        this.scene298 = true;
+                        }, 
+                        displayScene299(){
+                        this.scene298 = false;
+                        this.scene299 = true;
+                        },
+                         displayScene2991(){
+                            this.scene299 = false;
+                            this.scene2991 = true;
+                           // setTimeout(() => (this.message = 'nous y sommes'), 2000);
+                            setTimeout(() => (this.scene2991 = false), 2000);
+                             setTimeout(() => (this.scene2992 = true), 4000);
+                           setTimeout(() => (this.scene2992 = false), 6000);
+                              setTimeout(() => (this.scene2993 = true), 6500);
+                              setTimeout(() => (this.scene2993 = false), 8500);
+                             setTimeout(() => (this.scene2994 = true), 9000);
+                             setTimeout(() => (this.scene2994 = false), 11000);
+                             setTimeout(() => (this.scene2995 = true), 11500);
+                             setTimeout(() => (this.scene2995 = false), 12500);
+                             setTimeout(() => (this.scene2996 = true), 13000);
+                              setTimeout(() => (this.scene2996 = false), 13500);
+                              setTimeout(() => (this.scene2997 = true), 14000);
+                        },
+                    }
+         }).mount('#app')
+    </script>
+
+    <script>
+        function redirect(){
+            window.location.replace('index.html');
+        }
+    </script>
+    
+</body>
+</html>

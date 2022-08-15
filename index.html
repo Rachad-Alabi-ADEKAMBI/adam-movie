@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Lui lui lui</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css">
+    <script src="orientation.js"></script>
+</head>
+
+<body>
+
+    <div class="app">
+        <main class="main">
+            <div class="scene1">
+                <img src="public/img/image1.jpg" usemap="#powerpuffgirls" alt="" width="1300" height="800" 
+                class="image">
+                <div class="message" onclick="play()" id="message">
+                    <p>
+                        Audio bloqué par votre navigateur, veuillez cliquer sur l'image pour autoriser
+                    </p>
+                </div>
+
+                <map name="powerpuffgirls">
+                    <area shape="rect" coords="100, 700, 300, 380" href="scene1.html" alt="Cadavre sur le sol"
+                    title="scene1">
+                    <area shape="rect" coords="600, 350, 790, 460" href="scene2.html" 
+                        title='scene2' alt="Appareil photo">
+                    <area shape="rect" coords="1200, 350, 1400, 600"
+                        href="https://www.youtube.com/watch?v=qVXsEEJlrBY&ab_channel=Lucas" 
+                        title='scene3' alt="Pied appareil photo" />
+                </map>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="jquery.rwdImageMaps.min.js"></script>
+
+    <script>
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            alert('Pour une meillleure expérience, nous vous recommandons de consulter ce site en mode paysage');
+        }
+
+        var son1 = new Audio('public/audio/son1.mp3');
+
+        function play() {
+            son1.play();
+            document.getElementById("message").style.display = "none";
+        }
+    </script>
+    <script>
+        $(document).ready(function (e) {
+            $('img[usemap]').rwdImageMaps();
+
+            /*$('area').on('click', function() {
+                alert($(this).attr('alt') + ' clicked');
+              //  window.location.replace'
+            });
+            */
+        });
+    </script>
+</body>
+
+</html>

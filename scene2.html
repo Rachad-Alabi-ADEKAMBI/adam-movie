@@ -1,0 +1,380 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lui lui lui - scene 2</title>
+    <!-- CSS only -->
+   <link rel="stylesheet" href="main.css">
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</head>
+
+<body>
+
+        
+    <div id='app'>
+        <main class="main">
+           <div class="scene1" v-if='scene1' >
+                <img src="public/img/image1.jpg" usemap="#image-map">
+                
+                <map name="image-map">
+                    <area target="" alt="image" title="image" href='scene1.html' 
+                    coords="80, 550, 300, 150" shape="rect">
+
+                    <area target="" alt="image" title="image" href='scene2.html'
+                     coords="808,2093,3299,24750" shape="rect">
+                </map>
+           </div>
+
+           <div class="scene1" v-if='scene11'>
+                <img src="public/img/image11.jpg" alt="photo de cadavre" @click='displayScene12()'>
+           </div>
+
+           <div class="scene1" v-if='scene12'>
+                <img src="public/img/image12.jpg" alt="photo de cadavre"  @click='displayScene13()'>
+             </div>
+
+             <div class="scene1" v-if='scene13'>
+                <img src="public/img/image13.jpg" alt="photo de cadavre"  @click='displayScene14()'>
+             </div>
+
+             <div class="scene1" v-if='scene14'>
+                <img src="public/img/image14.jpg" alt="photo de cadavre" @click='displayScene15()'>
+             </div>
+
+             <div class="scene1" v-if='scene15'>
+                <img src="public/img/image15.jpg" alt="photo de cadavre"  @click='displayScene16()'>
+             </div>
+
+             <div class="scene1" v-if='scene16'> <br><br>
+                <p class="error">
+                    404 error page not found
+                </p>
+             </div>
+
+             <div class="scene1" v-if='scene21'>
+                <img src="public/img/image21.jpg" alt="photo de cadavre"  @click='displayScene22()'>
+             </div>
+
+             <div class="scene1" v-if='scene22'>
+                <img src="public/img/image22.jpg" alt="photo de cadavre" @click='displayScene23()'>
+             </div>
+
+             <div class="scene1" v-if='scene23'>
+                <img src="public/img/image23.jpg" alt="photo de cadavre 23" @click='displayScene24()'>
+             </div>
+
+             <div class="scene1" v-if='scene24'>
+                <img src="public/img/image24.jpg" alt="photo de cadavre 24" @click='displayScene25()'>
+             </div>
+
+             <div class="scene1" v-if='scene25'>
+                <img src="public/img/image25.jpg" alt="photo de cadavre 25" @click='displayScene26()'>
+             </div>
+
+             <div class="scene1" v-if='scene26'>
+                <img src="public/img/image26.jpg" alt="photo de cadavre" @click='displayScene27()'>
+             </div>
+
+             <div class="scene1" v-if='scene27'>
+                <img src="public/img/image27.jpg" alt="photo de cadavre" @click='displayScene28()'>
+             </div>
+
+             <div class="scene1" v-if='scene28'>
+                <img src="public/img/image28.jpg" alt="photo de cadavre"  @click='displayScene29()'>
+             </div>
+
+             <div class="scene1" v-if='scene29'>
+                <img src="public/img/image29.jpg" alt="photo de cadavre" @click='displayScene291()'>
+             </div>
+
+             <div class="scene1" v-if='scene291'>
+                <img src="public/img/image291.jpg" alt="photo de cadavre"  @click='displayScene292()'>
+             </div>
+
+             <div class="scene1" v-if='scene292'>
+                <img src="public/img/image292.jpg" alt="photo de cadavre" @click='displayScene293()'>
+             </div>
+
+             <div class="scene1" v-if='scene293'>
+                <img src="public/img/image293.jpg" alt="photo de cadavre" @click='displayScene294()'>
+             </div>
+
+             <div class="scene1" v-if='scene294'>
+                <img src="public/img/image294.jpg" alt="photo de cadavre 294" @click='displayScene295()'>
+             </div>
+
+             <div class="scene1" v-if='scene295'>
+                <img src="public/img/image295.png" alt="photo de cadavre 295"  @click='displayScene296()'>
+             </div>
+
+             <div class="scene1" v-if='scene296'>
+                <img src="public/img/image296.png" alt="photo de cadavre 296" @click='displayScene297()'>
+             </div>
+
+             <div class="scene1" v-if='scene297'>
+                <img src="public/img/image297.jpg" alt="photo de cadavre" @click='displayScene298()'>
+             </div>
+
+             <div class="scene1" v-if='scene298'>
+                <img src="public/img/image298.jpg" alt="photo de cadavre" @click='displayScene299()'>
+             </div>
+
+             <div class="scene1" v-if='scene299'>
+                <img src="public/img/image299.jpg" alt="photo de cadavre"  @click='displayScene2991()'>
+             </div>
+
+             <div class="scene1" v-if='scene2991'>
+                <img src="public/img/image2991.png" alt="photo de cadavre" @click='displayScene2992()'>
+             </div>
+
+            <div class="scene1" v-if='scene2992'>
+                <img src="public/img/image2992.png" alt="photo de cadavre">
+            </div>
+
+            <div class="scene1" v-if='scene2993'>
+                <img src="public/img/image2993.png" alt="photo de cadavre">
+            </div>
+
+            <div class="scene1" v-if='scene2994'>
+                <img src="public/img/image2994.png" alt="photo de cadavre">
+            </div>
+
+            <div class="scene1" v-if='scene2995'>
+                <img src="public/img/image2995.png" alt="photo de cadavre">
+            </div>
+
+            <div class="scene1" v-if='scene2996'>
+                <img src="public/img/image2996.png" alt="photo de cadavre">
+            </div>
+
+            <div class="scene1" v-if='scene2997'>
+                <div class="message" onclick="redirect()">
+                    <p>
+                        Accueil
+                    </p>
+                </div>
+            </div>
+
+
+          
+        </main>
+    </div>
+       
+    <script>
+        var son1 = new Audio('public/audio/son1.mp3');
+        var son12 = new Audio('public/audio/son12.mp3');
+        var son13 = new Audio('public/audio/son13.mp3');
+        var son14 = new Audio('public/audio/son14.mp3');
+        var son15 = new Audio('public/audio/son15.mp3');
+        var son21 = new Audio('public/audio/son21.mp3');
+        var son22 = new Audio('public/audio/son22.mp3');
+        var son23 = new Audio('public/audio/son23.mp3');
+        var son24 = new Audio('public/audio/son24.mp3');
+        const { createApp } = Vue
+             createApp({
+                data() {
+                    return {
+                    scene1: false,
+                    scene11: false,
+                    scene12: false,
+                    scene13:false,
+                    scene14: false,
+                    scene15:false,
+                    scene16: false,
+                    scene21: true,
+                    scene22: false,
+                    scene23: false,
+                    scene24: false,
+                    scene25: false,
+                    scene26: false,
+                    scene27: false,
+                    scene28: false,
+                    scene29: false,
+                    scene291: false,
+                    scene292: false,
+                    scene293: false,
+                    scene294: false,
+                    scene295: false,
+                    scene296: false,
+                    scene297: false,
+                    scene298: false,
+                    scene299: false,
+                    message: 'message',
+                    scene2991: false,
+                    scene2992: false,
+                    scene2993: false,
+                    scene2994: false,
+                    scene2995: false,
+                    scene2996: false,
+                    scene2997: false
+                   
+                    }
+                    },
+                    mounted: function(){
+                       this.displayScene21();
+                      // this.setShow();
+                      //this.addToBasket();
+                     
+                      
+                    },
+                    methods: {
+                     displayScene1(){
+                        this.scene1 = true;
+                      //  son1.play();
+                     // setTimeout(() => (this.son1.play()), 14000);
+                    },
+                    addToBasket() {
+                   // const item = this.photo;
+                    setTimeout(() => (this.message = 'ok'), 2000);
+                    },
+                   
+                 
+                    displayScene11(){
+                        this.scene1 = false;
+                        this.scene11 = true;
+                    },
+                    displayScene12(){
+                        this.scene11 = false;
+                        this.scene12 = true;
+                      //  son12.stop();
+                      son12.play();
+                       
+                    },
+                    displayScene13(){
+                        this.scene12 = false;
+                        this.scene13 = true;
+                      //  son13.stop();
+                      son13.play();
+                       
+                    },
+                    displayScene14(){
+                        this.scene13 = false;
+                        this.scene14 = true;
+                        //this.son14.stop();
+                        son14.play();
+                       
+                    },
+                    displayScene15(){
+                        this.scene14 = false;
+                        this.scene15 = true;
+                        son15.play();
+                    },
+                    displayScene16(){
+                        this.scene15 = false;
+                        this.scene16 = true;
+                    },
+                    displayScene21(){
+                        this.scene1 = false;
+                        this.scene21 = true;
+                    },
+                    displayScene22(){
+                        this.scene21 = false;
+                        this.scene22 = true;
+                        son21.play();
+                    },
+                    displayScene23(){
+                        this.scene22 = false;
+                        this.scene23 = true;
+                    },
+                    displayScene24(){
+                        this.scene23 = false;
+                        this.scene24 = true;
+                        son22.play();
+                    },
+                    displayScene25(){
+                        this.scene24 = false;
+                        this.scene25 = true;
+                        son22.play();
+                        },
+                    displayScene26(){
+                        this.scene25 = false;
+                        this.scene26 = true;
+                        son22.pause();
+                        son23.play();
+                        },
+                    displayScene27(){
+                        this.scene26 = false;
+                        this.scene27 = true;
+                        },
+                    displayScene28(){
+                        this.scene27 = false;
+                        this.scene28 = true;
+                        },
+                    displayScene29(){
+                        this.scene28 = false;
+                        this.scene29 = true;
+                        },
+                    displayScene291(){
+                        this.scene29 = false;
+                        this.scene291 = true;
+                        },
+                    displayScene292(){
+                        this.scene291 = false;
+                        this.scene292 = true;
+                        },
+                    displayScene293(){
+                        this.scene292 = false;
+                        this.scene293 = true;
+                        son23.pause();
+                        son24.play();
+                        },
+                        displayScene294(){
+                            son24.pause();
+                        this.scene293 = false;
+                        this.scene294 = true;
+                        },
+                        displayScene295(){
+                        this.scene294 = false;
+                        this.scene295 = true;
+                        },
+                        displayScene296(){
+                        this.scene295 = false;
+                        this.scene296 = true;
+                        },
+                        displayScene297(){
+                        this.scene296 = false;
+                        this.scene297 = true;
+                        },
+                        displayScene298(){
+                        this.scene297 = false;
+                        this.scene298 = true;
+                        }, 
+                        displayScene299(){
+                        this.scene298 = false;
+                        this.scene299 = true;
+                        },
+                         displayScene2991(){
+                            this.scene299 = false;
+                            this.scene2991 = true;
+                           // setTimeout(() => (this.message = 'nous y sommes'), 2000);
+                            setTimeout(() => (this.scene2991 = false), 2000);
+                             setTimeout(() => (this.scene2992 = true), 4000);
+                           setTimeout(() => (this.scene2992 = false), 6000);
+                              setTimeout(() => (this.scene2993 = true), 6500);
+                              setTimeout(() => (this.scene2993 = false), 8500);
+                             setTimeout(() => (this.scene2994 = true), 9000);
+                             setTimeout(() => (this.scene2994 = false), 11000);
+                             setTimeout(() => (this.scene2995 = true), 11500);
+                             setTimeout(() => (this.scene2995 = false), 12500);
+                             setTimeout(() => (this.scene2996 = true), 13000);
+                              setTimeout(() => (this.scene2996 = false), 13500);
+                              setTimeout(() => (this.scene2997 = true), 14000);
+                        },
+                    }
+         }).mount('#app')
+    </script>
+
+    <script>
+        function redirect() {
+            window.location.replace('index.html');
+        }
+    </script>
+    
+</body>
+</html>
